@@ -8,7 +8,7 @@ client.on("ready", async () =>{
  
     console.log(`${client.user.username} is online.`);
    
-    client.user.setActivity("In dev | Probeer =help", { type: "PLAYING" });
+    client.user.setActivity("BETA v2.3.3 | Probeer =help", { type: "PLAYING" });
 });
 
 /*******************************
@@ -36,7 +36,7 @@ client.on("ready", async () =>{
     }
  
     else if (command === `help`) {
-        var berichtje = "**Lijst met commands:**\n\n=1234 **-** telt verder (56...)\n=hallo **-** Reageert (groet terug)\n=geheim **-** Lijst met geheime commands\n=animated **-** Lijst met animated emotes die de bot kan sturen";
+        var berichtje = "**Lijst met commands:**\n\n=1234 **-** telt verder (56...)\n=hallo **-** Reageert (groet terug)\n=geheim **-** Lijst met geheime commands";
 
         if (args[0] === `commands`)  { berichtje = "typ gewoon =help"; }
         else if (args[0] === `truc`) { berichtje = "typ gewoon =help"; } 
@@ -50,22 +50,6 @@ client.on("ready", async () =>{
 
     else if (command === `geheim`) {
         return message.channel.send("Dat weten alleen Mat-Hijs en Levi :yum:");
-    }
-    
-    else if (command === `animated`) {
-        return message.channel.send("**Typ een van onderstaande commands zodat de bot een animated sticker stuurt!**\n=zulu - helikopter **[LET OP: NSFW]**\n=rickblob - rickroll blob\n=siuu - siuuuuuuu");
-    }
-
-    else if (command === `zulu`) {
-        return message.channel.send(":helicockter:");
-    }
-
-    else if (command === `rickblob`) {
-        return message.channel.send(":rickrollblob:");
-    }
-
-    else if (command === `siuu`) {
-        return message.channel.send(":siuuuu:");
     }
 });
 
