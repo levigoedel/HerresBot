@@ -51,6 +51,10 @@ client.on("ready", async () =>{
     else if (command === `geheim`) {
         return message.channel.send("Dat weten alleen Mat-Hijs en Levi :yum:");
     }
+    
+    else if (command === `animated`) {
+        return message.channel.send("**Typ een van onderstaande commands zodat de bot een animated sticker stuurt!**\n=zulu - helikopter **[LET OP: NSFW]**\n=rickblob - rickroll blob\n=siuu - siuuuuuuu");
+    }
 });
 
 client.login(process.env.token);
