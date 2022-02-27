@@ -36,7 +36,7 @@ client.on("ready", async () =>{
     }
  
     else if (command === `help`) {
-        var berichtje = "**Lijst met commands:**\n\n=1234 **-** telt verder (56...)\n=hallo **-** Reageert (groet terug)";
+        var berichtje = "**Lijst met commands:**\n\n=1234 **-** telt verder (56...)\n=hallo **-** Reageert (groet terug)\n=geheim **-** Lijst met geheime commands";
 
         if (args[0] === `commands`)  { berichtje = "typ gewoon =help"; }
         else if (args[0] === `truc`) { berichtje = "typ gewoon =help"; } 
