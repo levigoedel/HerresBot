@@ -8,7 +8,7 @@ client.on("ready", async () =>{
  
     console.log(`${client.user.username} is online.`);
    
-    client.user.setActivity("klooien | Probeer =help", { type: "PLAYING" });
+    client.user.setActivity("In dev | Probeer =help", { type: "PLAYING" });
 });
 
 /*******************************
