@@ -1,0 +1,14 @@
+{
+  "name": "mampie",
+  "version": "1.0.0",
+  "description": "De bot voor de Discord server van KampenRP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Discord, Bot, Discord Bot, KampenRP, KampenRP bot",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.6.0"
+  }
+}
