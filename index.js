@@ -48,6 +48,9 @@ client.on("ready", async () =>{
         return message.channel.send("56789");
     }
 
+    else if (command === `geheim`) {
+        return message.channel.send("Dat weten alleen Mat-Hijs en Levi :yum:");
+    }
 });
 
 client.login(process.env.token);
