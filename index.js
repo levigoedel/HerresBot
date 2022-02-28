@@ -51,6 +51,16 @@ client.on("ready", async () =>{
     else if (command === `geheim`) {
         return message.channel.send("Dat weten alleen Mat-Hijs en Levi :yum:");
     }
+
+    else if (command === `ship`) {
+        const namen = ["Tjalling", "Chemaine", "Kiara", "Juul", "Jelle", "Mees", "Fleur", "Thomas", "Izzy", "Timon", "Lynn", "Dani", "Stan", "Myrthe", "Nigel", "Bruun", "Ayden"];
+        let aantalNamen = namen.length;
+        let randomNr = Math.floor(Math.random()*aantalNamen);
+        let gekozenNaam = namen[randomNr];
+        let berichtje = "De gekozen naam is: " + gekozenNaam;
+
+        return message.channel.send(berichtje);
+    }
 });
 
 client.login(process.env.token);
