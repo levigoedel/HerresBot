@@ -36,7 +36,7 @@ client.on("ready", async () =>{
     }
  
     else if (command === `help`) {
-        var berichtje = "**Lijst met commands:**\n\n=1234 **-** telt verder (56...)\n=hallo **-** Reageert (groet terug)\n=geheim **-** Lijst met geheime commands";
+        var berichtje = "**Lijst met commands:**\n\n=1234 **-** telt verder (56...)\n=hallo **-** Reageert (groet terug)\n=geheim **-** Lijst met geheime commands\n=ship **-** Een random naam uit onze klas H1A (behalve Jente, Sofia, Jochem, Noa, Sascha, Angelina, Levi en Mat-Hijs)\n=uitleg/ship **-** Uitleg over ship functie van de bot";
 
         if (args[0] === `commands`)  { berichtje = "typ gewoon =help"; }
         else if (args[0] === `truc`) { berichtje = "typ gewoon =help"; } 
@@ -50,6 +50,10 @@ client.on("ready", async () =>{
 
     else if (command === `geheim`) {
         return message.channel.send("Dat weten alleen Mat-Hijs en Levi :yum:");
+    }
+
+    else if (command === `uitleg/ship`) {
+        return message.channel.send("Stuur een keer =ship. Je krijgt dan een naam uit onze klas. Als je daarna nog een keer =ship doet gebeurt er het zelfde. Deze twee kinderen zijn dan saampies geshipt!");
     }
 
     else if (command === `ship`) {
